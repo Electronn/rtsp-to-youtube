@@ -1,0 +1,10 @@
+video1:
+ build: ./ffmpeg
+ container_name: video1
+ hostname: video1
+ restart: always
+ environment:
+  - YOUTUBE_KEY=your-youtube-key
+  - RTSP_THREAD=your-rtstp-stream-link
+ command: "/start.sh"
+
